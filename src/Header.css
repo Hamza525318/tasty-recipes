@@ -1,0 +1,86 @@
+.header{
+    position: relative;
+    padding: 30px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    object-fit: cover;
+}
+.header img{
+    width: 80px;
+    margin: 15px;
+    object-fit: contain;
+}
+
+.search_food input{
+    width: 400px;
+    height: 30px;
+    background-color: rgb(24, 23, 23);
+    border: 1px solid black;
+    border-radius: 15px;
+    color: white;
+}
+.search_food input::placeholder{
+    margin-left: 10px;
+}
+.food_icons{
+    display: flex;
+    width: 450px;
+    justify-content: space-between;
+
+}
+
+.each_icon{
+    margin: 15px 10px;
+   width: 50px;
+   border-radius: 50px;
+   text-align: center;
+   color: white;
+   background-color: black;
+   padding: 7px;
+   cursor: pointer;
+}
+.each_icon p{
+    font-size: x-small;
+    font-family: 'Times New Roman', Times, serif;
+}
+.cuisine_link{
+    text-decoration: none;
+    color: white;
+}
+.home_icon{
+    position: absolute;
+    top: 20px;
+    left: 10px;
+    border: 1px solid black;
+}
+.logout_btn{
+    position: absolute;
+    top: 20px;
+    right: 10px;
+    padding: 4px 15px;
+    background-color: rgb(58, 55, 55);
+    border: 1px solid rgb(58, 55, 55);
+    color: #fff;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+@media (max-width:780px){
+    .logout_btn,.home_icon{
+        position: absolute;
+        top: 5px;
+    }
+    .search_food input{
+        width: 300px;
+        margin: 20px 0px;
+    }
+    .search_food input:placeholder{
+        text-align: center;
+    }
+    .food_icons{
+        width: 100%;
+        margin: 10px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+}

@@ -1,0 +1,41 @@
+.veg{
+    padding: 50px auto;
+    margin: 30px 0px;
+   
+}
+.veg h2{
+    margin: 5px 30px;
+
+}
+.vegetarian{
+    display: flex;
+    justify-content: space-around;
+    flex-basis: 33.333333%;
+    width: 100%;
+    flex-wrap: wrap;
+}
+.vegeterian_dishes{
+    padding: 20px 0px;
+}
+.vegeterian_dishes img{
+    width: 250px;
+    border-radius: 20px;
+}
+.popular_link{
+    text-decoration: underline;
+    color: black;
+    margin: 5px 0px;
+}
+@media (max-width:786px){
+    .vegeterian_dishes{
+        width: 45%;
+        
+    }
+
+}
+@media (max-width:540px){
+    .vegeterian_dishes{
+        width: 100%;
+        text-align: center;
+    }
+}
